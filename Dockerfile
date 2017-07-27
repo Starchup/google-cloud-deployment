@@ -1,6 +1,6 @@
 FROM codeship/google-cloud-deployment
 MAINTAINER Geoffroy Lesage "geoffroy@starchup.com"
 
-RUN apk add --update nodejs
+RUN apt-get update && apt-get install -y nodejs
 
 CMD ["/bin/sh"]
